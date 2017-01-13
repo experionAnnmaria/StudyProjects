@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel= "stylesheet" href="css/bootstrap.min.css">
+    <link rel= "stylesheet" href="calculator.css">
+</head>
+<body>
+    <form name="calc">
+        <div class="container">
+            <br>
+            <div class="row">
+                <input  type="text" name="area" id="display" readonly size="23" value="0" >
+                <input type=button class="btn-default delete" value="X" OnClick="backspace()">
+            </div>
+            <br>
+        </div>
+        <div class="buttons">
+            <p>
+                <input type=button class="btn btn-default" value="√" OnClick="squareRoot()">
+                <input type=button class="btn btn-default" value="(" OnClick="openpara(this.value)">
+                <input type=button class="btn btn-default" value=")" OnClick="closeParagraph(this.value)">
+                <input type=button class="btn btn-default" value="π" OnClick="piValue()">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="sin" OnClick="if (checkNumber(this.form.display.value)) { sin(this.form) }">
+                <input type=button class="btn btn-default" value="cos" OnClick="if (checkNumber(this.form.display.value)) { cos(this.form) }">
+                <input type=button class="btn btn-default" value="tan" OnClick="if (checkNumber(this.form.display.value)) { tan(this.form) }">
+                <input type=button class="btn btn-default" value="/" OnClick="displayNumber('/')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="7" OnClick="displayNumber(7)">
+                <input type=button class="btn btn-default" value="8" OnClick="displayNumber(8)">
+                <input type=button class="btn btn-default" value="9" OnClick="displayNumber(9)">
+                <input type=button class="btn btn-default" value="*" OnClick="displayNumber('*')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="4" OnClick="displayNumber(4)">
+                <input type=button class="btn btn-default" value="5" OnClick="displayNumber(5)">
+                <input type=button class="btn btn-default" value="6" OnClick="displayNumber(6)">
+                <input type=button class="btn btn-default" value="-" OnClick="displayNumber('-')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="1" OnClick="displayNumber(1)">
+                <input type=button class="btn btn-default" value="2" OnClick="displayNumber(2)">
+                <input type=button class="btn btn-default" value="3" OnClick="displayNumber(3)">
+                <input type=button class="btn btn-default" value="+" OnClick="displayNumber('+')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="0" OnClick="displayNumber(0)">
+                <input type=button class="btn btn-default" value="." OnClick="displayNumber('.')">
+                <input type=button class="btn btn-default" value="C" OnClick="rub('')">
+                <input type=button class="btn btn-default" value="=" OnClick="solve()">
+            </p>
+        </div>
+
+    </form>
+    <script src="calculator.js"></script>
+</body>
+</html>

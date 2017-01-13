@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculatorLatest</title>
+    <link rel= "stylesheet" href="css/bootstrap.min.css">
+    <link rel= "stylesheet" href="1.css">
+</head>
+<body>
+    <form name="calc">
+        <div class="container">
+            <br>
+            <div class="row">
+                <input  type="text" name="area" id="display" readonly size="23" value="0" >
+                <input type=button class="btn-default delete" value="X" OnClick="backspace()">
+            </div>
+            <br>
+        </div>
+        <div class="buttons">
+            <p>
+                <input type=button class="btn btn-default" value="√" OnClick="">
+                <input type=button class="btn btn-default" value="(" OnClick="openpara(this.value)">
+                <input type=button class="btn btn-default" value=")" OnClick="closepara(this.value)">
+                <input type=button class="btn btn-default" value="π" OnClick="displayNum('π')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="sin" OnClick="">
+                <input type=button class="btn btn-default" value="cos" OnClick="">
+                <input type=button class="btn btn-default" value="tan" OnClick="">
+                <input type=button class="btn btn-default" value="/" OnClick="displayNum('/')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="7" OnClick="displayNum(7)">
+                <input type=button class="btn btn-default" value="8" OnClick="displayNum(8)">
+                <input type=button class="btn btn-default" value="9" OnClick="displayNum(9)">
+                <input type=button class="btn btn-default" value="*" OnClick="displayNum('*')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="4" OnClick="displayNum(4)">
+                <input type=button class="btn btn-default" value="5" OnClick="displayNum(5)">
+                <input type=button class="btn btn-default" value="6" OnClick="displayNum(6)">
+                <input type=button class="btn btn-default" value="-" OnClick="displayNum('-')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="1" OnClick="displayNum(1)">
+                <input type=button class="btn btn-default" value="2" OnClick="displayNum(2)">
+                <input type=button class="btn btn-default" value="3" OnClick="displayNum(3)">
+                <input type=button class="btn btn-default" value="+" OnClick="displayNum('+')">
+            </p>
+            <p>
+                <input type=button class="btn btn-default" value="0" OnClick="displayNum(0)">
+                <input type=button class="btn btn-default" value="." OnClick="displayNum('.')">
+                <input type=button class="btn btn-default" value="C" OnClick="rub('')">
+                <input type=button class="btn btn-default" value="=" OnClick="solve()">
+            </p>
+        </div>
+
+    </form>
+    <script src="1.js"></script>
+</body>
+</html>

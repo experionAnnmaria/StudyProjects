@@ -1,0 +1,7 @@
+the $ symbol to make something a variable.
+
+the ul, li, and a selectors are nested inside the nav selector
+
+_partial.scss. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the @import directive.
+
+

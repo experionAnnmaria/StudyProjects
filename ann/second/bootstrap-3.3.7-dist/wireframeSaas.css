@@ -1,0 +1,60 @@
+.topSpace {
+  margin-top: 55px !important;
+}
+
+.status {
+  background-color: #467500;
+}
+
+body {
+  background-color: #8BC300;
+}
+
+h1 {
+  padding-left: 20px;
+}
+
+.col-sm-3 {
+  color: white;
+}
+
+.weCreate {
+  font-size: 25px;
+  color: white;
+  padding-left: 20px;
+}
+
+.websites {
+  font-size: 59px;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h3 {
+  color: white;
+}
+
+.canva {
+  background-color: white;
+}
+
+.list-group {
+  color: white;
+}
+
+.sub {
+  background-color: #619C00;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}

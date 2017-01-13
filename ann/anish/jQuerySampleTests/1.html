@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="css/bootstrap.min.css">
+    <link rel= "stylesheet" href="1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <link rel= "stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="1.js"></script>
+    <title>Employee Form jQuery</title>
+</head>
+<body>
+    
+    <form class="container" id="form1">
+            <fieldset>
+                <legend>Employee Details</legend>
+                <p>Employee ID * <span> : </span> <input type="text" required id="empId" name="empId"> <br> </p>
+                <p>Employee Name * <span> : </span>  <input type="text" required id="name" name="name"> <br> </p>
+                <p>Date Of Birth * <span> : </span>  <input type="date" required id="dob" name="dob" placeholder="DD-MM-YYYY">  <br> </p>
+                <p>Department * <span> : </span> 
+                <select name="departments" id="departments">
+                    <option>D1</option>
+                    <option>D2</option>
+                    <option>D3</option>
+                    <option>D4</option>
+                    <option>D5</option>
+                    <option>D6</option>
+                </select><br>
+                </p>
+                <p>Gender * <span> : </span>   <input type="radio" id="gender" value="Female" name="gender">Female 
+                <input type="radio" id="gender" value="Male" name="gender" checked >Male <br>
+                </p>
+
+
+                 <p> <br> <button class="btn btn-default" id="save" type="button">SUBMIT</button> <span>    
+                 <button class="btn btn-default" type="reset">RESET</button> </span> </p>           
+            </fieldset>
+
+        </div>
+
+        <div class="row">
+                <div id="dialog-1" >Saved successfully.
+                </div>
+            </div>
+
+        <div class="container"                    >    
+            <br>            <br>            <br>            <br>
+            <fieldset>
+                <legend>Registered Members</legend>
+                <table id="tab"> 
+                    <tr>
+                        <th> Employee ID </th>
+                        <th> Employee Name</th>
+                        <th> Date Of Birth </th>
+                        <th> Department </th>
+                        <th> Gender </th>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+   
+    </form>
+    
+
+</body>
+</html>
+<!--    
+
+-->

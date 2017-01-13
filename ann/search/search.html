@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href="css/bootstrap.min.css">
+    <link rel= "stylesheet" href="search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <link rel= "stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="search.js"></script>
+    <title>Employee search</title>
+</head>
+<body>
+    <div class="container box">    
+        <br>            <br>            
+        <p> <input type="text" id="searchKey" name="searchKey" placeholder="Enter key to search">
+            <button class="btn btn-default" id="search" type="button">Search</button> 
+        </p>
+        <br>            <br>
+        <fieldset>
+            <legend>Registered Members</legend>
+            <p>
+            <table id="tab"> 
+                <tr>
+                    <th> Employee ID </th>
+                    <th> Employee Name</th>
+                    <th> Date Of Birth </th>
+                    <th> Department </th>
+                    <th> Gender </th>
+                </tr>
+                <tr> <td> 500 </td> <td> Ajay </td> <td> 12/12/1994 </td> <td> Human Resource </td> <td> Male </td> </tr>
+                <tr> <td> 501 </td> <td> Annu </td> <td> 28/09/1994 </td> <td> Development </td> <td> Female </td> </tr>
+                <tr> <td> 502 </td> <td> Sanjeev</td> <td> 12/12/1990 </td> <td> Testing </td> <td> Male </td> </tr>
+                <tr> <td> 506 </td> <td> Nitha </td> <td> 14/06/1989 </td> <td> Sales </td> <td> Female </td> </tr>
+                <tr> <td> 608 </td> <td> Mathews </td> <td> 05/09/1963 </td> <td> Human Resource </td> <td> Male </td> </tr>
+                <tr> <td> 606 </td> <td> Sam </td> <td> 03/12/1994 </td> <td> Human Resource </td> <td> Male </td> </tr>
+                <tr> <td> 602 </td> <td> Aju </td> <td> 05/12/1994 </td> <td> Development </td> <td> Male </td> </tr>
+                <tr> <td> 609 </td> <td> Smith </td> <td> 12/03/1990 </td> <td> Testing </td> <td> Male </td> </tr>
+                <tr> <td> 512 </td> <td> Nayana </td> <td> 14/06/1985 </td> <td> Sales </td> <td> Female </td> </tr>
+                <tr> <td> 579 </td> <td> Mark </td> <td> 05/04/1966 </td> <td> Human Resource </td> <td> Male </td> </tr>
+            </table>
+            </p>
+        </fieldset>
+    </div>
+</body>
+</html>

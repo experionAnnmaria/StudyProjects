@@ -1,0 +1,11 @@
+.personal label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+.personal input {
+  display: inline-block;
+  float: left;
+}

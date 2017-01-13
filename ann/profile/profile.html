@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>PROFILE</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    </head>
+    <body>
+        
+        <h4>Personal Profile</h4>
+    <form>
+        <fieldset>
+            <legend>Personalia:</legend>
+
+            <div>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                    <td rowspan="4"><img src = "images.png"
+                    alt = "Uploadprofile pic" />
+                    <br>
+                    <button type="browse">Browse</browse> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="radio" id="gen" name="gen">
+                        <label for="female">Female</label>
+                        <input type="radio" id="gen" name="gen">
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of birth</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="text" id="dob" name="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="cob">Country of birth</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="text" id="cob" name="cob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="pob">Place of birth</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="text" id="pob" name="pob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="nat">Nationality</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="text" id="nat" name="nat">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="religion">Religion</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="text" id="religion" name="religion">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="email">Email</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email">
+                    </td>
+                </tr>
+                    <td>
+                        <label for "marital">Marital Status</label>
+                    </td>
+                    <td>
+                        :
+                    </td>
+                    <td>
+                        <input type="radio" id="marital" name="marital">
+                        <label for="single">Single</label>
+                        <input type="radio" id="marital" name="marital">
+                        <label for="married">Married</label>
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+
+        <table>
+            <tr>
+                <td> <label for ="perm_ca">Permanent Contact Address:</label> </td>
+                <td> <label for ="office_ca">Office Contact Address:</label> </td>
+            </tr>
+            <tr>
+                <td>  <textarea name="perm_ca" rows="6" cols="50"></textarea> </td>
+                <td>  <textarea name="office_ca" rows="6" cols="50"></textarea> </td>
+            </tr>
+        </table>
+        </fieldset>
+        </div>
+    <br>
+    <br> 
+    <div>
+
+    <fieldset>
+            <legend>Educational Qualification:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for ="qualification">Qualification</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <select name="qualification">
+                            <option value="tenth">Metriculation</option>
+                            <option value="twelfth">HSE 95</option>
+                            <option value="degree">Degree SLK</option>
+                            <option value="pg">PG TT</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="specialisation">Specialisation</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="specialisation" name="specialisation">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="insti">Institution</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="insti" name="insti">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="yop">Year of passing</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="yop" name="yop">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for ="per">Percentage</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="per" name="per">
+                    </td>
+                </tr>
+                <tr>
+
+
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <br>
+    <br>
+
+    <div>
+                        <button type="button">Submit</button> 
+                    
+    </div>
+    </form>
+
+    </body>
+</html>
+<!--
+<style>
+.personal label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+.personal input {
+  display: inline-block;
+  float: left;
+}
+</style>
+//-->

@@ -1,0 +1,70 @@
+$bgColor1:pink;
+$bgColor2:#8BC300;
+$bgColor3:white;
+$bgColor4:#619C00;
+
+$fontColor1:white;
+
+.topSpace{
+     margin-top: 55px!important;
+ }
+
+.status{
+    background-color: $bgColor1;
+    
+}
+
+ body {
+    background-color: $bgColor2;
+}
+
+h1{
+    padding-left: 20px;
+}
+
+.col-sm-3{
+    color: $fontColor1;
+    
+}
+.weCreate{
+    font-size: 25px;
+    color:  $fontColor1;
+    padding-left: 20px;
+}
+
+.websites{
+    font: 
+    {
+        size: 59px;
+        weight :bold;
+    }
+    color:$fontColor1;    
+}
+p{
+    color:  $fontColor1; 
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+h3{
+    color: $fontColor1;    
+}
+
+.canva{
+    background-color: $bgColor3;
+}
+
+.list-group{
+    color: $fontColor1;
+}
+
+
+ .sub {
+    background-color: $bgColor4;
+}
+
+    textarea {	
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+    width: 100%;}

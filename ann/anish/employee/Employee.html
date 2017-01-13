@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   
+    <script src="Jquery/jquery-ui.min.js"></script>
+    <script src="tableManipulation.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link href="employee.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <h2>Employee Details</h2>
+        <h4>Please Fill the Form</h4>
+
+<!--Form for entering data-->
+        <form class="form-horizontal" action="#" method="get">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="EmpID" class=" col-form-label"> Enter Employee ID :</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" id="eid" name="eid" placeholder="Your Employee ID" required>
+                    </div>
+                    <div class="col-sm-4" id="validateEid"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="EmpID" class=" col-form-label"> Enter Name :</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type='text' id="ename" name="ename" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-sm-4" id="validateName"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="EmpID" class=" col-form-label"> Date Of Birth :</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input class="form-control" type='date' id="datepicker" name='dob' placeholder='Date of birth' required>
+                    </div>
+                    <div class="col-sm-4" id="validateDob"><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="EmpID" class=" col-form-label"> Gender :</label>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <input id="radio" class="radio-inline" type="radio" name="gender" value="Male" checked> Male
+                        <input id="radio" class="radio-inline" type="radio" name="gender" value="Female"> Female<br>
+                    </div><br><br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="EmpID" class=" col-form-label"> Department :</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <select class="form-control" name="department" id="department">
+                            <option value="Development">Development</option>
+                            <option value="Testing">Testing</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Quality Analyst">Quality Analyst</option>
+                        </select>
+                    </div><br><br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p align="center">
+                            <input class="btn btn-primary" type='button' value='Save' id='save'>
+                            <input class="btn btn-primary" type='reset' value='Cancel'>
+                        </p>
+                    </div><br><br>
+                </div>
+            </div>
+        </form>
+    </div>
+
+<!--This division contain the employee table-->
+    <div class="container">
+        <table class="table table-bordered" id="table1">
+            <tr>
+                <thead>
+                    <th id="tid">Employee ID</th>
+                    <th>Name</th>
+                    <th>Date Of Birth</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                </thead>
+            </tr>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<!--This divison for storing the dailog that written by tableManipulation.js-->
+<div class="dialog" id="dialog">
+    
+</div>
+</html>
